@@ -1,5 +1,7 @@
 # React Movie App
 
+## Work in progress
+
 In the project directory, you can run:
 
 ### `npm install`
