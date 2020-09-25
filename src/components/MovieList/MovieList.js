@@ -4,7 +4,15 @@ const MovieList = (props) => {
   return (
     <div className='container'>
       {props.movies.map((movie, i) => {
-        return <Movie key={i} image={movie.poster_path} />;
+        return (
+          <Movie
+            key={i}
+            image={movie.poster_path}
+            overview={movie.overview}
+            vote={movie.vote_average}
+            title={movie.title}
+          />
+        );
       })}
     </div>
   );

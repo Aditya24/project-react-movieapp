@@ -8,7 +8,120 @@ body {
   font-family: "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: azure;
+  background: #d2cb7a;
+}
+/*Navbar*/
+
+.navbar {
   display: flex;
   justify-content: center;
+  height: 15vh;
+  background: antiquewhite;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+/*Searchbar*/
+
+.form-search {
+  margin: 0 auto;
+  text-align: center;
+
+  font: bold 2rem sans-serif;
+  max-width: 70%;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.form-search input {
+  width: 60%;
+  box-sizing: border-box;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 14px 15px 14px 40px;
+  border: 1px solid #b6c3cd;
+  border-right: 0;
+  color: #4e565c;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.form-search button {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  background-color: #5f9ea0;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  padding: 15px 22px;
+  margin-left: -4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.form-search i {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+  color: #80a3bd;
+}
+
+/*Movies Section*/
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.movie {
+  background-color: cadetblue;
+  border-radius: 3px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0.2);
+  width: 300px;
+  overflow: hidden;
+  margin: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.movie img {
+  max-width: 100%;
+  height: auto;
+}
+.movie-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.movie-info h3 {
+  margin: 0;
+}
+.movie-info span {
+  margin-top: 10px;
+}
+.movie-overlay {
+  padding: 1.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: cornsilk;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+  overflow: auto;
+  max-height: 100%;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.movie:hover .movie-overlay {
+  transform: translateY(0%);
 }

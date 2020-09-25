@@ -2,17 +2,20 @@ import React from "react";
 
 const SearchArea = (props) => {
   return (
-    <div>
-      <form action='' onSubmit={props.handelSubmit}>
-        <div className='input-field'>
-          <input
-            placeholder='Search Movie'
-            onChange={props.handelChange}
-            type='text'
-          />
-        </div>
+    <>
+      <form className='form-search' action='' onSubmit={props.handelSubmit}>
+        <input
+          className='searchTerm'
+          placeholder='Avengers'
+          onChange={props.handelChange}
+          type='search'
+          name='search'
+        />
+        <button type='submit' onSubmit={props.handelSubmit}>
+          Search
+        </button>
       </form>
-    </div>
+    </>
   );
 };
 
