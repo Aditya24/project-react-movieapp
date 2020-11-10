@@ -15,8 +15,8 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
-  height: 15vh;
-  background: antiquewhite;
+  background: linear-gradient(45deg, #5f9ea0, #0c0d13);
+  color: white;
   align-items: center;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   text-align: center;
 
-  font: bold 2rem sans-serif;
+  font: 2rem;
   max-width: 70%;
   position: relative;
   text-transform: capitalize;
